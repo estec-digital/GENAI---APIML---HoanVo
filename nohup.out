@@ -1,0 +1,559 @@
+/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py:87: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')
+/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py:101: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  df = df.resample(freq).mean()
+sensor_ids: ['BP_DMKTKT705', 'BP_DMKTKT707', 'BP_DMKTKT706', 'BP_DMKTKT708']
+projection_expression: #col0, #col1, #col2, #col3, #col4, #col5
+expression_attribute_names: {'#col0': 'Date', '#col1': 'Time', '#col2': 'BP_DMKTKT705', '#col3': 'BP_DMKTKT707', '#col4': 'BP_DMKTKT706', '#col5': 'BP_DMKTKT708'}
+2025-06-11 2025-06-11
+00:00:00 11:45:00
+date_list: [datetime.date(2025, 6, 11)]
+factory_id_date_prefix: F_xGc676J6PH:2025-06-11
+items: [{'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:45:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:44:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:43:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:42:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:41:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:40:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:39:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:38:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:37:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:36:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:35:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:34:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:33:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:32:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:31:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:30:00', 'BP_DMKTKT708': Decimal('54.86')}]
+df:    BP_DMKTKT706 BP_DMKTKT707        Date BP_DMKTKT705      Time BP_DMKTKT708
+0        874.78       819.92  2025-06-11        54.86  11:45:00        54.86
+1        874.78       819.92  2025-06-11        54.86  11:44:00        54.86
+2        874.78       819.92  2025-06-11        54.86  11:43:00        54.86
+3        874.78       819.92  2025-06-11        54.86  11:42:00        54.86
+4        874.78       819.92  2025-06-11        54.86  11:41:00        54.86
+5        874.78       819.92  2025-06-11        54.86  11:40:00        54.86
+6        874.78       819.92  2025-06-11        54.86  11:39:00        54.86
+7        874.78       819.92  2025-06-11        54.86  11:38:00        54.86
+8        874.78       819.92  2025-06-11        54.86  11:37:00        54.86
+9        874.78       819.92  2025-06-11        54.86  11:36:00        54.86
+10       874.78       819.92  2025-06-11        54.86  11:35:00        54.86
+11       874.78       819.92  2025-06-11        54.86  11:34:00        54.86
+12       874.78       819.92  2025-06-11        54.86  11:33:00        54.86
+13       874.78       819.92  2025-06-11        54.86  11:32:00        54.86
+14       874.78       819.92  2025-06-11        54.86  11:31:00        54.86
+15       874.78       819.92  2025-06-11        54.86  11:30:00        54.86
+df:                      BP_DMKTKT706  BP_DMKTKT707  BP_DMKTKT705  BP_DMKTKT708
+timestamp                                                                  
+2025-06-11 11:30:00        874.78        819.92         54.86         54.86
+2025-06-11 11:31:00        874.78        819.92         54.86         54.86
+2025-06-11 11:32:00        874.78        819.92         54.86         54.86
+2025-06-11 11:33:00        874.78        819.92         54.86         54.86
+2025-06-11 11:34:00        874.78        819.92         54.86         54.86
+2025-06-11 11:35:00        874.78        819.92         54.86         54.86
+2025-06-11 11:36:00        874.78        819.92         54.86         54.86
+2025-06-11 11:37:00        874.78        819.92         54.86         54.86
+2025-06-11 11:38:00        874.78        819.92         54.86         54.86
+2025-06-11 11:39:00        874.78        819.92         54.86         54.86
+2025-06-11 11:40:00        874.78        819.92         54.86         54.86
+2025-06-11 11:41:00        874.78        819.92         54.86         54.86
+2025-06-11 11:42:00        874.78        819.92         54.86         54.86
+2025-06-11 11:43:00        874.78        819.92         54.86         54.86
+2025-06-11 11:44:00        874.78        819.92         54.86         54.86
+2025-06-11 11:45:00        874.78        819.92         54.86         54.86
+INFO:     13.58.166.155:44206 - "POST /plotdashboard HTTP/1.1" 200 OK
+/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py:87: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')
+sensor_ids: ['BP_DMKTKT705', 'BP_DMKTKT707', 'BP_DMKTKT706', 'BP_DMKTKT708']
+projection_expression: #col0, #col1, #col2, #col3, #col4, #col5
+expression_attribute_names: {'#col0': 'Date', '#col1': 'Time', '#col2': 'BP_DMKTKT705', '#col3': 'BP_DMKTKT707', '#col4': 'BP_DMKTKT706', '#col5': 'BP_DMKTKT708'}
+2025-06-11 2025-06-11
+00:00:00 11:45:00
+date_list: [datetime.date(2025, 6, 11)]
+factory_id_date_prefix: F_xGc676J6PH:2025-06-11
+items: [{'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:45:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:44:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:43:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:42:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:41:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:40:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:39:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:38:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:37:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:36:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:35:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:34:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:33:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:32:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:31:00', 'BP_DMKTKT708': Decimal('54.86')}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'Time': '11:30:00', 'BP_DMKTKT708': Decimal('54.86')}]
+df:    BP_DMKTKT706 BP_DMKTKT707        Date BP_DMKTKT705      Time BP_DMKTKT708
+0        874.78       819.92  2025-06-11        54.86  11:45:00        54.86
+1        874.78       819.92  2025-06-11        54.86  11:44:00        54.86
+2        874.78       819.92  2025-06-11        54.86  11:43:00        54.86
+3        874.78       819.92  2025-06-11        54.86  11:42:00        54.86
+4        874.78       819.92  2025-06-11        54.86  11:41:00        54.86
+5        874.78       819.92  2025-06-11        54.86  11:40:00        54.86
+6        874.78       819.92  2025-06-11        54.86  11:39:00        54.86
+7        874.78       819.92  2025-06-11        54.86  11:38:00        54.86
+8        874.78       819.92  2025-06-11        54.86  11:37:00        54.86
+9        874.78       819.92  2025-06-11        54.86  11:36:00        54.86
+10       874.78       819.92  2025-06-11        54.86  11:35:00        54.86
+11       874.78       819.92  2025-06-11        54.86  11:34:00        54.86
+12       874.78       819.92  2025-06-11        54.86  11:33:00        54.86
+13       874.78       819.92  2025-06-11        54.86  11:32:00        54.86
+14       874.78       819.92  2025-06-11        54.86  11:31:00        54.86
+15       874.78       819.92  2025-06-11        54.86  11:30:00        54.86
+df:                      BP_DMKTKT706  BP_DMKTKT707  BP_DMKTKT705  BP_DMKTKT708
+timestamp                                                                  
+2025-06-11 11:30:00        874.78        819.92         54.86         54.86
+2025-06-11 11:31:00        874.78        819.92         54.86         54.86
+2025-06-11 11:32:00        874.78        819.92         54.86         54.86
+2025-06-11 11:33:00        874.78        819.92         54.86         54.86
+2025-06-11 11:34:00        874.78        819.92         54.86         54.86
+2025-06-11 11:35:00        874.78        819.92         54.86         54.86
+2025-06-11 11:36:00        874.78        819.92         54.86         54.86
+2025-06-11 11:37:00        874.78        819.92         54.86         54.86
+2025-06-11 11:38:00        874.78        819.92         54.86         54.86
+2025-06-11 11:39:00        874.78        819.92         54.86         54.86
+2025-06-11 11:40:00        874.78        819.92         54.86         54.86
+2025-06-11 11:41:00        874.78        819.92         54.86         54.86
+2025-06-11 11:42:00        874.78        819.92         54.86         54.86
+2025-06-11 11:43:00        874.78        819.92         54.86         54.86
+2025-06-11 11:44:00        874.78        819.92         54.86         54.86
+2025-06-11 11:45:00        874.78        819.92         54.86         54.86
+INFO:     18.217.4.39:35316 - "POST /plotdashboard HTTP/1.1" 200 OK
+/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py:87: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')
+sensor_ids: ['BP_DMKTKT705', 'BP_DMKTKT707', 'BP_DMKTKT706', 'BP_DMKTKT708', 'BP_DMKTKT786']
+projection_expression: #col0, #col1, #col2, #col3, #col4, #col5, #col6
+expression_attribute_names: {'#col0': 'Date', '#col1': 'Time', '#col2': 'BP_DMKTKT705', '#col3': 'BP_DMKTKT707', '#col4': 'BP_DMKTKT706', '#col5': 'BP_DMKTKT708', '#col6': 'BP_DMKTKT786'}
+2025-06-11 2025-06-11
+00:00:00 11:45:00
+date_list: [datetime.date(2025, 6, 11)]
+factory_id_date_prefix: F_xGc676J6PH:2025-06-11
+items: [{'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:45:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:44:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:43:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:42:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:41:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:40:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:39:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:38:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:37:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:36:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:35:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:34:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:33:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:32:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:31:00'}, {'BP_DMKTKT706': Decimal('874.78'), 'BP_DMKTKT707': Decimal('819.92'), 'Date': '2025-06-11', 'BP_DMKTKT705': Decimal('54.86'), 'BP_DMKTKT708': Decimal('54.86'), 'BP_DMKTKT786': Decimal('173.05'), 'Time': '11:30:00'}]
+df:    BP_DMKTKT706 BP_DMKTKT707        Date  ... BP_DMKTKT708 BP_DMKTKT786      Time
+0        874.78       819.92  2025-06-11  ...        54.86       173.05  11:45:00
+1        874.78       819.92  2025-06-11  ...        54.86       173.05  11:44:00
+2        874.78       819.92  2025-06-11  ...        54.86       173.05  11:43:00
+3        874.78       819.92  2025-06-11  ...        54.86       173.05  11:42:00
+4        874.78       819.92  2025-06-11  ...        54.86       173.05  11:41:00
+5        874.78       819.92  2025-06-11  ...        54.86       173.05  11:40:00
+6        874.78       819.92  2025-06-11  ...        54.86       173.05  11:39:00
+7        874.78       819.92  2025-06-11  ...        54.86       173.05  11:38:00
+8        874.78       819.92  2025-06-11  ...        54.86       173.05  11:37:00
+9        874.78       819.92  2025-06-11  ...        54.86       173.05  11:36:00
+10       874.78       819.92  2025-06-11  ...        54.86       173.05  11:35:00
+11       874.78       819.92  2025-06-11  ...        54.86       173.05  11:34:00
+12       874.78       819.92  2025-06-11  ...        54.86       173.05  11:33:00
+13       874.78       819.92  2025-06-11  ...        54.86       173.05  11:32:00
+14       874.78       819.92  2025-06-11  ...        54.86       173.05  11:31:00
+15       874.78       819.92  2025-06-11  ...        54.86       173.05  11:30:00
+
+[16 rows x 7 columns]
+df:                      BP_DMKTKT706  BP_DMKTKT707  ...  BP_DMKTKT708  BP_DMKTKT786
+timestamp                                        ...                            
+2025-06-11 11:30:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:31:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:32:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:33:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:34:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:35:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:36:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:37:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:38:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:39:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:40:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:41:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:42:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:43:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:44:00        874.78        819.92  ...         54.86        173.05
+2025-06-11 11:45:00        874.78        819.92  ...         54.86        173.05
+
+[16 rows x 5 columns]
+INFO:     18.217.4.39:43426 - "POST /plotdashboard HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.106:45468 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:37718 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:54630 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py:87: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')
+sensor_ids: ['4G1GA01XAC01_O2', '4G1GA02XAC01_O2', '4G1GA03XAC01_O2', '4G1GA04XAC01_O2']
+projection_expression: #col0, #col1, #col2, #col3, #col4, #col5
+expression_attribute_names: {'#col0': 'Date', '#col1': 'Time', '#col2': '4G1GA01XAC01_O2', '#col3': '4G1GA02XAC01_O2', '#col4': '4G1GA03XAC01_O2', '#col5': '4G1GA04XAC01_O2'}
+2025-06-11 2025-06-11
+06:00:00 08:00:00
+date_list: [datetime.date(2025, 6, 11)]
+factory_id_date_prefix: F_xGc676J6PH:2025-06-11
+items: [{'Date': '2025-06-11', 'Time': '08:00:00'}, {'4G1GA02XAC01_O2': Decimal('2.75692'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('14.0124'), '4G1GA04XAC01_O2': Decimal('3.06783'), 'Time': '07:59:00', '4G1GA03XAC01_O2': Decimal('3.19333')}, {'4G1GA02XAC01_O2': Decimal('2.82177'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('4.34653'), '4G1GA04XAC01_O2': Decimal('3.0766'), 'Time': '07:58:00', '4G1GA03XAC01_O2': Decimal('3.41001')}, {'4G1GA02XAC01_O2': Decimal('2.916'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('2.78782'), '4G1GA04XAC01_O2': Decimal('3.32952'), 'Time': '07:57:00', '4G1GA03XAC01_O2': Decimal('3.62593')}, {'4G1GA02XAC01_O2': Decimal('2.86831'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('2.57191'), '4G1GA04XAC01_O2': Decimal('3.22652'), 'Time': '07:56:00', '4G1GA03XAC01_O2': Decimal('3.95514')}, {'4G1GA02XAC01_O2': Decimal('2.86831'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('2.57191'), '4G1GA04XAC01_O2': Decimal('3.22652'), 'Time': '07:55:00', '4G1GA03XAC01_O2': Decimal('3.95514')}, {'4G1GA02XAC01_O2': Decimal('2.85954'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('9.73907'), '4G1GA04XAC01_O2': Decimal('3.30205'), 'Time': '07:54:00', '4G1GA03XAC01_O2': Decimal('4.91302')}, {'4G1GA02XAC01_O2': Decimal('2.74739'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('13.7217'), '4G1GA04XAC01_O2': Decimal('2.57801'), 'Time': '07:53:00', '4G1GA03XAC01_O2': Decimal('6.34012')}, {'4G1GA02XAC01_O2': Decimal('2.74739'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('13.7217'), '4G1GA04XAC01_O2': Decimal('2.57801'), 'Time': '07:52:00', '4G1GA03XAC01_O2': Decimal('6.34012')}, {'4G1GA02XAC01_O2': Decimal('3.85519'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('3.20134'), '4G1GA04XAC01_O2': Decimal('3.32952'), 'Time': '07:51:00', '4G1GA03XAC01_O2': Decimal('3.25017')}, {'4G1GA02XAC01_O2': Decimal('3.85519'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('3.20134'), '4G1GA04XAC01_O2': Decimal('3.32952'), 'Time': '07:50:00', '4G1GA03XAC01_O2': Decimal('3.25017')}, {'4G1GA02XAC01_O2': Decimal('5.19837'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('3.07927'), '4G1GA04XAC01_O2': Decimal('3.37682'), 'Time': '07:49:00', '4G1GA03XAC01_O2': Decimal('3.25017')}, {'4G1GA02XAC01_O2': Decimal('8.19486'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('2.95644'), '4G1GA04XAC01_O2': Decimal('3.21775'), 'Time': '07:48:00', '4G1GA03XAC01_O2': Decimal('3.32494')}, {'4G1GA02XAC01_O2': Decimal('11.0498'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('4.05623'), '4G1GA04XAC01_O2': Decimal('3.49012'), 'Time': '07:47:00', '4G1GA03XAC01_O2': Decimal('3.30663')}, {'4G1GA02XAC01_O2': Decimal('2.916'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('8.52789'), '4G1GA04XAC01_O2': Decimal('3.60304'), 'Time': '07:46:00', '4G1GA03XAC01_O2': Decimal('3.38216')}, {'4G1GA02XAC01_O2': Decimal('2.94499'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('12.5948'), '4G1GA04XAC01_O2': Decimal('19.308'), 'Time': '07:45:00', '4G1GA03XAC01_O2': Decimal('3.56985')}, {'4G1GA02XAC01_O2': Decimal('3.17922'), 'Date': '2025-06-11', '4G1GA01XAC01_O2': Decimal('2.94766'), '4G1GA04XAC01_O2': Decimal('3.46113'), 'Time': '07:44:00', '4G1GA03XAC01_O2': Decimal('3.748')}]
+df:           Date      Time  ... 4G1GA04XAC01_O2 4G1GA03XAC01_O2
+0   2025-06-11  08:00:00  ...             NaN             NaN
+1   2025-06-11  07:59:00  ...         3.06783         3.19333
+2   2025-06-11  07:58:00  ...          3.0766         3.41001
+3   2025-06-11  07:57:00  ...         3.32952         3.62593
+4   2025-06-11  07:56:00  ...         3.22652         3.95514
+5   2025-06-11  07:55:00  ...         3.22652         3.95514
+6   2025-06-11  07:54:00  ...         3.30205         4.91302
+7   2025-06-11  07:53:00  ...         2.57801         6.34012
+8   2025-06-11  07:52:00  ...         2.57801         6.34012
+9   2025-06-11  07:51:00  ...         3.32952         3.25017
+10  2025-06-11  07:50:00  ...         3.32952         3.25017
+11  2025-06-11  07:49:00  ...         3.37682         3.25017
+12  2025-06-11  07:48:00  ...         3.21775         3.32494
+13  2025-06-11  07:47:00  ...         3.49012         3.30663
+14  2025-06-11  07:46:00  ...         3.60304         3.38216
+15  2025-06-11  07:45:00  ...          19.308         3.56985
+16  2025-06-11  07:44:00  ...         3.46113           3.748
+
+[17 rows x 6 columns]
+df:                      4G1GA02XAC01_O2  ...  4G1GA03XAC01_O2
+timestamp                             ...                 
+2025-06-11 07:44:00          3.17922  ...          3.74800
+2025-06-11 07:45:00          2.94499  ...          3.56985
+2025-06-11 07:46:00          2.91600  ...          3.38216
+2025-06-11 07:47:00         11.04980  ...          3.30663
+2025-06-11 07:48:00          8.19486  ...          3.32494
+2025-06-11 07:49:00          5.19837  ...          3.25017
+2025-06-11 07:50:00          3.85519  ...          3.25017
+2025-06-11 07:51:00          3.85519  ...          3.25017
+2025-06-11 07:52:00          2.74739  ...          6.34012
+2025-06-11 07:53:00          2.74739  ...          6.34012
+2025-06-11 07:54:00          2.85954  ...          4.91302
+2025-06-11 07:55:00          2.86831  ...          3.95514
+2025-06-11 07:56:00          2.86831  ...          3.95514
+2025-06-11 07:57:00          2.91600  ...          3.62593
+2025-06-11 07:58:00          2.82177  ...          3.41001
+2025-06-11 07:59:00          2.75692  ...          3.19333
+2025-06-11 08:00:00              NaN  ...              NaN
+
+[17 rows x 4 columns]
+INFO:     3.22.97.129:53652 - "POST /plotdashboard HTTP/1.1" 200 OK
+/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py:87: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')
+/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py:101: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  df = df.resample(freq).mean()
+sensor_ids: ['BP_DMKTKT403']
+projection_expression: #col0, #col1, #col2
+expression_attribute_names: {'#col0': 'Date', '#col1': 'Time', '#col2': 'BP_DMKTKT403'}
+2025-06-09 2025-06-11
+00:00:00 23:59:59
+date_list: [datetime.date(2025, 6, 9) datetime.date(2025, 6, 10)
+ datetime.date(2025, 6, 11)]
+factory_id_date_prefix: F_xGc676J6PH:2025-06-09
+items: [{'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.49'), 'Time': '23:59:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.49'), 'Time': '23:58:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.49'), 'Time': '23:57:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.49'), 'Time': '23:56:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:55:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:54:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:53:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:52:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:51:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:50:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:49:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:48:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:47:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:46:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:45:00'}, {'Date': '2025-06-09', 'BP_DMKTKT403': Decimal('256.46'), 'Time': '23:44:00'}]
+factory_id_date_prefix: F_xGc676J6PH:2025-06-10
+items: [{'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:59:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:58:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:57:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:56:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:55:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:54:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:53:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:52:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:51:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('253.98'), 'Time': '23:50:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('253.98'), 'Time': '23:49:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('253.98'), 'Time': '23:48:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('253.98'), 'Time': '23:47:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('253.98'), 'Time': '23:46:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:45:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:44:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:43:00'}]
+factory_id_date_prefix: F_xGc676J6PH:2025-06-11
+items: [{'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:41:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:40:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:39:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:38:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:37:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:36:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:35:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:34:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:33:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:32:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:31:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.98'), 'Time': '14:30:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.98'), 'Time': '14:29:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.98'), 'Time': '14:28:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.98'), 'Time': '14:27:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.98'), 'Time': '14:26:00'}, {'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.98'), 'Time': '14:25:00'}]
+df:           Date BP_DMKTKT403      Time
+0   2025-06-09       256.49  23:59:00
+1   2025-06-09       256.49  23:58:00
+2   2025-06-09       256.49  23:57:00
+3   2025-06-09       256.49  23:56:00
+4   2025-06-09       256.46  23:55:00
+5   2025-06-09       256.46  23:54:00
+6   2025-06-09       256.46  23:53:00
+7   2025-06-09       256.46  23:52:00
+8   2025-06-09       256.46  23:51:00
+9   2025-06-09       256.46  23:50:00
+10  2025-06-09       256.46  23:49:00
+11  2025-06-09       256.46  23:48:00
+12  2025-06-09       256.46  23:47:00
+13  2025-06-09       256.46  23:46:00
+14  2025-06-09       256.46  23:45:00
+15  2025-06-09       256.46  23:44:00
+16  2025-06-10       260.73  23:59:00
+17  2025-06-10       260.73  23:58:00
+18  2025-06-10       260.73  23:57:00
+19  2025-06-10       260.73  23:56:00
+20  2025-06-10       260.73  23:55:00
+21  2025-06-10       260.73  23:54:00
+22  2025-06-10       260.73  23:53:00
+23  2025-06-10       260.73  23:52:00
+24  2025-06-10       260.73  23:51:00
+25  2025-06-10       253.98  23:50:00
+26  2025-06-10       253.98  23:49:00
+27  2025-06-10       253.98  23:48:00
+28  2025-06-10       253.98  23:47:00
+29  2025-06-10       253.98  23:46:00
+30  2025-06-10       260.73  23:45:00
+31  2025-06-10       260.73  23:44:00
+32  2025-06-10       260.73  23:43:00
+33  2025-06-11       260.99  14:41:00
+34  2025-06-11       260.99  14:40:00
+35  2025-06-11       260.99  14:39:00
+36  2025-06-11       260.99  14:38:00
+37  2025-06-11       260.99  14:37:00
+38  2025-06-11       260.99  14:36:00
+39  2025-06-11       260.99  14:35:00
+40  2025-06-11       260.99  14:34:00
+41  2025-06-11       260.99  14:33:00
+42  2025-06-11       260.99  14:32:00
+43  2025-06-11       260.99  14:31:00
+44  2025-06-11       260.98  14:30:00
+45  2025-06-11       260.98  14:29:00
+46  2025-06-11       260.98  14:28:00
+47  2025-06-11       260.98  14:27:00
+48  2025-06-11       260.98  14:26:00
+49  2025-06-11       260.98  14:25:00
+df:                      BP_DMKTKT403
+timestamp                        
+2025-06-09 23:44:00        256.46
+2025-06-09 23:45:00        256.46
+2025-06-09 23:46:00        256.46
+2025-06-09 23:47:00        256.46
+2025-06-09 23:48:00        256.46
+2025-06-09 23:49:00        256.46
+2025-06-09 23:50:00        256.46
+2025-06-09 23:51:00        256.46
+2025-06-09 23:52:00        256.46
+2025-06-09 23:53:00        256.46
+2025-06-09 23:54:00        256.46
+2025-06-09 23:55:00        256.46
+2025-06-09 23:56:00        256.49
+2025-06-09 23:57:00        256.49
+2025-06-09 23:58:00        256.49
+2025-06-09 23:59:00        256.49
+2025-06-10 23:43:00        260.73
+2025-06-10 23:44:00        260.73
+2025-06-10 23:45:00        260.73
+2025-06-10 23:46:00        253.98
+2025-06-10 23:47:00        253.98
+2025-06-10 23:48:00        253.98
+2025-06-10 23:49:00        253.98
+2025-06-10 23:50:00        253.98
+2025-06-10 23:51:00        260.73
+2025-06-10 23:52:00        260.73
+2025-06-10 23:53:00        260.73
+2025-06-10 23:54:00        260.73
+2025-06-10 23:55:00        260.73
+2025-06-10 23:56:00        260.73
+2025-06-10 23:57:00        260.73
+2025-06-10 23:58:00        260.73
+2025-06-10 23:59:00        260.73
+2025-06-11 14:25:00        260.98
+2025-06-11 14:26:00        260.98
+2025-06-11 14:27:00        260.98
+2025-06-11 14:28:00        260.98
+2025-06-11 14:29:00        260.98
+2025-06-11 14:30:00        260.98
+2025-06-11 14:31:00        260.99
+2025-06-11 14:32:00        260.99
+2025-06-11 14:33:00        260.99
+2025-06-11 14:34:00        260.99
+2025-06-11 14:35:00        260.99
+2025-06-11 14:36:00        260.99
+2025-06-11 14:37:00        260.99
+2025-06-11 14:38:00        260.99
+2025-06-11 14:39:00        260.99
+2025-06-11 14:40:00        260.99
+2025-06-11 14:41:00        260.99
+INFO:     13.59.27.40:54430 - "POST /plotdashboard HTTP/1.1" 200 OK
+/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py:87: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')
+sensor_ids: ['BP_DMKTKT403']
+projection_expression: #col0, #col1, #col2
+expression_attribute_names: {'#col0': 'Date', '#col1': 'Time', '#col2': 'BP_DMKTKT403'}
+2025-06-10 2025-06-10
+00:00:00 23:59:59
+date_list: [datetime.date(2025, 6, 10)]
+factory_id_date_prefix: F_xGc676J6PH:2025-06-10
+items: [{'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:59:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:58:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:57:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:56:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:55:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:54:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:53:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:52:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:51:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('253.98'), 'Time': '23:50:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('253.98'), 'Time': '23:49:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('253.98'), 'Time': '23:48:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('253.98'), 'Time': '23:47:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('253.98'), 'Time': '23:46:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:45:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:44:00'}, {'Date': '2025-06-10', 'BP_DMKTKT403': Decimal('260.73'), 'Time': '23:43:00'}]
+df:           Date BP_DMKTKT403      Time
+0   2025-06-10       260.73  23:59:00
+1   2025-06-10       260.73  23:58:00
+2   2025-06-10       260.73  23:57:00
+3   2025-06-10       260.73  23:56:00
+4   2025-06-10       260.73  23:55:00
+5   2025-06-10       260.73  23:54:00
+6   2025-06-10       260.73  23:53:00
+7   2025-06-10       260.73  23:52:00
+8   2025-06-10       260.73  23:51:00
+9   2025-06-10       253.98  23:50:00
+10  2025-06-10       253.98  23:49:00
+11  2025-06-10       253.98  23:48:00
+12  2025-06-10       253.98  23:47:00
+13  2025-06-10       253.98  23:46:00
+14  2025-06-10       260.73  23:45:00
+15  2025-06-10       260.73  23:44:00
+16  2025-06-10       260.73  23:43:00
+df:                      BP_DMKTKT403
+timestamp                        
+2025-06-10 23:43:00        260.73
+2025-06-10 23:44:00        260.73
+2025-06-10 23:45:00        260.73
+2025-06-10 23:46:00        253.98
+2025-06-10 23:47:00        253.98
+2025-06-10 23:48:00        253.98
+2025-06-10 23:49:00        253.98
+2025-06-10 23:50:00        253.98
+2025-06-10 23:51:00        260.73
+2025-06-10 23:52:00        260.73
+2025-06-10 23:53:00        260.73
+2025-06-10 23:54:00        260.73
+2025-06-10 23:55:00        260.73
+2025-06-10 23:56:00        260.73
+2025-06-10 23:57:00        260.73
+2025-06-10 23:58:00        260.73
+2025-06-10 23:59:00        260.73
+INFO:     3.145.213.215:50230 - "POST /plotdashboard HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'src/plot_dashboard.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [114768]
+Process SpawnProcess-70:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/server.py", line 77, in _serve
+    config.load()
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/config.py", line 435, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/GENAI---APIML---HoanVo/src/main.py", line 2, in <module>
+    from src.plot_dashboard import *
+  File "/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py", line 66
+    print("items:", items)
+IndentationError: unexpected indent
+WARNING:  StatReload detected changes in 'src/plot_dashboard.py'. Reloading...
+Process SpawnProcess-71:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/server.py", line 77, in _serve
+    config.load()
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/config.py", line 435, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/GENAI---APIML---HoanVo/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/GENAI---APIML---HoanVo/src/main.py", line 2, in <module>
+    from src.plot_dashboard import *
+  File "/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py", line 67
+    for item in items:
+IndentationError: unexpected indent
+WARNING:  StatReload detected changes in 'src/plot_dashboard.py'. Reloading...
+WARNING:  StatReload detected changes in 'src/plot_dashboard.py'. Reloading...
+INFO:     Started server process [123806]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [123808]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/ubuntu/GENAI---APIML---HoanVo']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/ubuntu/GENAI---APIML---HoanVo']
+ERROR:    [Errno 98] Address already in use
+/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py:87: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')
+/home/ubuntu/GENAI---APIML---HoanVo/src/plot_dashboard.py:101: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  df = df.resample(freq).mean()
+sensor_ids: ['BP_DMKTKT403']
+projection_expression: #col0, #col1, #col2
+expression_attribute_names: {'#col0': 'Date', '#col1': 'Time', '#col2': 'BP_DMKTKT403'}
+2025-06-08 2025-06-11
+14:59:00 14:59:00
+date_list: [datetime.date(2025, 6, 8) datetime.date(2025, 6, 9)
+ datetime.date(2025, 6, 10) datetime.date(2025, 6, 11)]
+factory_id_date_prefix: F_xGc676J6PH:2025-06-08
+factory_id_date_prefix: F_xGc676J6PH:2025-06-09
+factory_id_date_prefix: F_xGc676J6PH:2025-06-10
+factory_id_date_prefix: F_xGc676J6PH:2025-06-11
+items: [{'Date': '2025-06-11', 'BP_DMKTKT403': Decimal('260.99'), 'Time': '14:59:00'}]
+df:          Date BP_DMKTKT403      Time
+0  2025-06-11       260.99  14:59:00
+df:                      BP_DMKTKT403
+timestamp                        
+2025-06-11 14:59:00        260.99
+INFO:     13.59.80.108:37042 - "POST /plotdashboard HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'src/plot_dashboard.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [123808]
+INFO:     Started server process [123904]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/plot_dashboard.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [123904]
+INFO:     Started server process [123916]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/plot_dashboard.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [123916]
+INFO:     Started server process [123918]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     172.203.245.192:51050 - "GET / HTTP/1.1" 200 OK
+INFO:     68.69.186.106:53450 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     3.130.96.91:56598 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     3.130.96.91:41980 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.20:62028 - "GET / HTTP/1.1" 200 OK
+INFO:     206.168.34.117:42176 - "GET / HTTP/1.1" 200 OK
+INFO:     206.168.34.117:57846 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     206.168.34.117:57900 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.117:46872 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.117:32840 - "GET /security.txt HTTP/1.1" 404 Not Found
+INFO:     206.168.34.117:36434 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.106:57516 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     45.131.155.254:59516 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     45.131.155.254:34152 - "GET / HTTP/1.1" 200 OK
+INFO:     152.53.248.175:57504 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:49914 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found

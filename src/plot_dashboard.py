@@ -8,6 +8,17 @@ from urllib.parse import quote
 import os
 from boto3.dynamodb.conditions import Key
 
+def query_all_items(table, **kwargs):
+    items = []
+    while True:
+        response = table.query(**kwargs)
+        items.extend(response['Items'])
+        if 'LastEvaluatedKey' in response:
+            kwargs['ExclusiveStartKey'] = response['LastEvaluatedKey']
+        else:
+            break
+    return items
+
 def plotdashboard(input_data, dynamodb, s3, prefix_s3, DYNAMODB_TABLE, S3_BUCKET, REGION_S3_BUCKET):
     try:
         body = input_data
@@ -42,10 +53,10 @@ def plotdashboard(input_data, dynamodb, s3, prefix_s3, DYNAMODB_TABLE, S3_BUCKET
             expression_attribute_names[alias] = col
             projection_expression_parts.append(alias)
         projection_expression = ", ".join(projection_expression_parts)
-        print("projection_expression:", projection_expression)
-        print("expression_attribute_names:", expression_attribute_names)
-        print(start_date, end_date)
-        print(start_time, end_time)
+        # print("projection_expression:", projection_expression)
+        # print("expression_attribute_names:", expression_attribute_names)
+        # print(start_date, end_date)
+        # print(start_time, end_time)
         # Query DynamoDB
         query_data = []
         date_list = pd.date_range(start=start_date, end=end_date).date
@@ -54,23 +65,26 @@ def plotdashboard(input_data, dynamodb, s3, prefix_s3, DYNAMODB_TABLE, S3_BUCKET
             # factory_id_date_prefix = f"{factory_id}::{date.isoformat()}"
             factory_id_date_prefix = f"{factory_id}:{date.isoformat()}"
             print("factory_id_date_prefix:", factory_id_date_prefix)
-            response = table.query(
-                KeyConditionExpression=Key('FactoryId_Date').eq(factory_id_date_prefix) & 
-                                    Key('Time').between(start_time.isoformat(), end_time.isoformat()),
-                ProjectionExpression=projection_expression,
-                ExpressionAttributeNames=expression_attribute_names,
-                ScanIndexForward=False
-            )
-            items = response['Items']
-            print("items:", items)
+            print("start_time:", start_time.isoformat())
+            print("end_time:", end_time.isoformat())
+            query_args = {
+                'KeyConditionExpression': Key('FactoryId_Date').eq(factory_id_date_prefix) &
+                                        Key('Time').between(start_time.isoformat(), end_time.isoformat()),
+                'ProjectionExpression': projection_expression,
+                'ExpressionAttributeNames': expression_attribute_names,
+                'ScanIndexForward': False
+            }
+            items = query_all_items(table, **query_args)
+            # print("items:", items)
         
-        for item in items:
-            item['Date'] = date.isoformat()
-            item['Time'] = item['Time']
-            query_data.append(item)
+            for item in items:
+                item['Date'] = date.isoformat()
+                item['Time'] = item['Time']
+                query_data.append(item)
 
         df = pd.DataFrame(query_data)
-        print("df:", df)
+        print("df:", df.head(2))
+        print("df:", df.tail(2))
         df['timestamp'] = pd.to_datetime(df['Date'] + ' ' + df['Time'])
         df.drop(columns=['Date', 'Time'], inplace=True)
 
@@ -82,7 +96,7 @@ def plotdashboard(input_data, dynamodb, s3, prefix_s3, DYNAMODB_TABLE, S3_BUCKET
             
         df.set_index('timestamp', inplace=True)
         df = df.sort_index(ascending=True)
-        print("df:", df)
+        # print("df:", df)
         try:
             df = df.fillna(method='ffill')
         except:

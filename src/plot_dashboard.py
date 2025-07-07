@@ -97,10 +97,7 @@ def plotdashboard(input_data, dynamodb, s3, prefix_s3, DYNAMODB_TABLE, S3_BUCKET
         df.set_index('timestamp', inplace=True)
         df = df.sort_index(ascending=True)
         # print("df:", df)
-        try:
-            df = df.fillna(method='ffill')
-        except:
-            df = df.fillna(method='bfill')
+        df = df.ffill()
         
         # Aggregation
         freq_map = {
@@ -121,7 +118,7 @@ def plotdashboard(input_data, dynamodb, s3, prefix_s3, DYNAMODB_TABLE, S3_BUCKET
             plt.plot(df.index, df[column], label=column)
         plt.title(f"Biểu đồ cảm biến từ {start_date} đến {end_date}")
         plt.xlabel(f"Thời gian từ {start_date} đến {end_date}")
-        plt.ylabel("Giá trị cảm biến")
+        plt.ylabel("Giá trị / Value")
         plt.legend()
         plt.grid(True)
         plt.xticks(rotation=45)

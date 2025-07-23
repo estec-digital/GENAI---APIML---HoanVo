@@ -9,6 +9,9 @@ import pandas as pd
 from pydantic import BaseModel
 from typing import Optional, List
 from src.querytag import *
+from src.forecast import *
+from fastapi import FastAPI, UploadFile, File, Form
+# from src.documentsprocessing import pdf2s3vector_function, querytag_function
 
 load_dotenv()
 app = FastAPI()
@@ -22,6 +25,10 @@ REGION_S3_BUCKET = os.getenv('REGION_S3_BUCKET')
 
 dynamodb = boto3.resource('dynamodb', region_name=REGION_DYNAMODB_TABLE)
 s3 = boto3.client('s3', region_name=REGION_S3_BUCKET)
+
+S3_VECTOR_BUCKET = os.getenv('S3_VECTOR_BUCKET')
+REGION_S3_VECTOR_BUCKET = os.getenv('REGION_S3_VECTOR_BUCKET')
+s3_vector = boto3.client('s3', region_name=REGION_S3_VECTOR_BUCKET)
 
 @app.get("/")
 def read_root():
@@ -83,3 +90,34 @@ def api_querytag(input_data: QueryTag):
         return {"error": "No input data provided."}
     output = querytag_function(input_data)
     return output
+
+class Forecasting(BaseModel):
+    sensor_ids: List[str] = ["4G1GA01XAC01_O2"]
+    start_time: str = "2025-07-08T06:00:00"
+    end_time: str = "2025-07-08T14:00:00"
+    aggregation: Optional[str] = 'raw'
+    factory_id: Optional[str] = 'F_xGc676J6PH'
+    
+@app.post("/forecast")
+def api_forecast(input_data: Forecasting):
+    input_data = input_data.dict()
+    prefix_s3 = 'plots'
+    if not input_data:
+        return {"error": "No input data provided."}
+    output = forecast_function(input_data, dynamodb, s3, prefix_s3, DYNAMODB_TABLE, S3_BUCKET, REGION_S3_BUCKET)
+    return output
+
+# @app.post("/pdf2s3vector", tags=["DocumentsProcessing"])
+# async def api_pdf2s3vector(file: UploadFile = File(...)):
+#     if not file:
+#         return {"error": "No file provided."}
+#     else:
+#         output = pdf2s3vector_function(file, dynamodb, s3, DYNAMODB_TABLE, S3_BUCKET, REGION_S3_BUCKET)
+#         return output
+
+# @app.post("/queryvector", tags=["DocumentsProcessing"])
+# async def api_queryvector(inputText: str = Form(...)):
+#     if not inputText:
+#         return {"error": "No input text provided."}
+#     output = {"message": f"Querying vector database with input: {inputText}"}
+#     return output
